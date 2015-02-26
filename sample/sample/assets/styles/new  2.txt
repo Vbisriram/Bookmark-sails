@@ -1,0 +1,89 @@
+12/2012 - What cable connects a cable modem to a wireless router?
+1. CAT5 cable ------------------------
+2. Coaxial cable
+3. RJ-11 cable
+4. No wire
+
+11/2012 - What program allows an Apple computer to run Microsoft Windows?
+1. Bonjour
+2. Boot camp-------------------------
+3. iBoot
+4. None of the above
+
+10/2012 - Which of the following people was a co-founder of Microsoft?
+1. Steve Wozniak
+2. Paul Allen-----------------------
+3. Bill Moggridge
+4. Gary Starkweather
+
+9/2012 - What are three types of networks?
+1. LAN TAN WAN
+2. LAN SAN WAN
+3. LAN PAN WAN
+4. LAN MAN WAN----------------------
+
+8/2012 - How many blocks of numbers are in an IP address?
+1. 1
+2. 2
+3. 3
+4. 4-----------------------------
+
+7/2012 - Which of the following is not a type of hard drive?
+1. IDE
+2. IDS----------------------------------
+3. SATA
+4. SCSI
+
+6/2012 - How many layers are in the OSI model?
+1. 4
+2. 5
+3. 6
+4. 7----------------------------------------
+
+5/2012 - Which of the below lines of HTML is correct?
+1. <strong>bold text<strong>
+2. </strong>bold text</strong>
+3. <b>Bold text<b>
+4. <b>bold text</b>-------------------------------------
+
+4/2012 - Who is considered to be the first programmer?
+1. Ada Lovelace---------------------------------------
+2. Alan Turing
+3. Bill Gates
+4. Tim Berners-Lee
+
+3/2012 - JavaScript is ....?
+1. a client-side scripting language---------------------------
+2. a server-side scripting-language
+3. a virus
+4. another name for Java
+
+2/2012 - A six digit Hex color code (#ADD8E6) defines values of Red, Blue, and Green in what order?
+1. #RRBBGG
+2. #GGRRBB
+3. #RRGGBB-------------------------------------------
+4. ##BBRRGG
+
+1/2012 - What is phishing?
+1. A computer virus
+2. A corrupt website
+3. A distribution of spam
+4. An identity theft scheme--------------------------------
+
+11/2011 - What is a firewall?
+1. Antivirus program
+2. Internet blocker
+3. Internet filter-----------------------------------------------
+4. Internet logger
+
+10/2011 - What is the default port number for Apache and most web servers?
+1. 20
+2. 27
+3. 80-----------------------------------------------------------
+4. 887
+
+9/2011 - What company built the first processor in the Apple Macintosh
+1. AMD
+2. Apple
+3. Intel
+4. Motorola--------------------------------------------------------------

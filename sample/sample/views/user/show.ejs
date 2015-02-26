@@ -1,0 +1,167 @@
+
+  <body ng-app="myApp" ng-controller="catCtrl">
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <d  iv class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="" data-toggle="modal" data-target="#myModal3">
+              Add Bookmark
+            </a>
+          </li>
+          <li>
+            <a class="page-scroll" href="" data-toggle="modal" data-target="#myModal2">
+              Edit
+            </a>
+            <!-- <a class="page-scroll" href="#signin">Edit</a> -->
+          </li>
+          <li>
+            <a class="page-scroll" href="/user/destroy">Sign out</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+
+    <center> <hr> <h1> Welcome <%= user.name %> </h1> </center>
+
+  <section id="signin" class="content-section text-center">
+    <div class="download-section">
+    <div class="col col-sm-3"  >
+      <div id="sidebar">
+        <ul class="nav nav-stacked">
+          <li>
+            <h3 class="highlight">Channels </h3>
+          </li>
+          <li ng-repeat=" _cat in cats ">
+            <a href='#signin' ng-click="setCurrentCategory(_cat.id)">  {{_cat.name}}  </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class = "container" >
+      <div>
+        <div class="col col-sm-9">
+            <h2> Bookmarks </h2>
+
+              <div class="col col-sm-5" >
+                <li ng-repeat="_book in bkmrks | filter:{ category_id : CurrentCategory  } ">
+                    <a href="{{ _book.url }}"> <FONT SIZE=4 COLOR="GREEN" FACE="VERDANA"> {{ _book.title  }} </FONT> </a>
+                </li>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </section>
+  </body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"
+          data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="myModalLabel">
+          This Modal title
+        </h4>
+      </div>
+      <div class="modal-body">
+
+        <form role="form" action="/user/update/<%= user.id %>" method="POST" class="form-signin">
+          <div class="form-group">
+            <!-- <input type="text" class="form-control" name="email" placeholder="Email" > -->
+            <input value="<%= user.name %>" name="name" type="text" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <input value="<%= user.email %>" name="email" type="text" class="form-control"/>
+            <!-- <input type="password" class="form-control" name="password" placeholder="Password" > -->
+          </div>
+          <div class="modal-footer">
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Save">
+              <!-- <input type="button" class="btn btn-default" data-dismiss="modal" value="Close"> -->
+              <button type="button" class="btn btn-default"
+              data-dismiss="modal">Close
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+  </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close"
+      data-dismiss="modal" aria-hidden="true">
+      &times;
+    </button>
+  </div>
+  <div class="modal-body">
+
+    <form role="form" action="/bookmark/create" method="POST" class="form-signin">
+      <div class="form-group">
+        <!-- <input type="text" class="form-control" name="email" placeholder="Email" > -->
+        <input  name="title" type="text" class="form-control" placeholder="Title"/>
+      </div>
+      <div class="form-group">
+        <input  name="url" type="text" class="form-control" placeholder="Url"/>
+        <!-- <input type="password" class="form-control" name="password" placeholder="Password" > -->
+      </div>
+      <div class="form-group" name="category_id">
+      <select class="form-control" >
+        <option value="1">Sports</option>
+        <option value="2">News</option>
+        <option value="3">Education</option>
+        <option value="4">SAP</option>
+      </select>
+    </div>
+      <div class="form-group">
+        <input name="user_id" value="<%= user.id %>" type="hidden" class="form-control" placeholder="ID"/>
+        <!-- <input type="password" class="form-control" name="password" placeholder="Password" > -->
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary" value="Save">
+          <!-- <input type="button" class="btn btn-default" data-dismiss="modal" value="Close"> -->
+          <button type="button" class="btn btn-default"
+          data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+</div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>

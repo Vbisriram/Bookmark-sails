@@ -1,0 +1,203 @@
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <d  iv class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand page-scroll" href="#page-top">
+        <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bookmark
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#about">About</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#signin">Sign in</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+  <!-- Intro Header -->
+      <header class="intro">
+          <div class="intro-body">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8 col-md-offset-2">
+                          <h1 class="brand-heading">Bookmark</h1>
+                          <p class="intro-text">A Simple bookmark maintainence application.<br>Created using Sails .</p>
+                          <a href="#about" class="btn btn-circle page-scroll">
+                              <i class="fa fa-angle-double-down animated"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+
+
+
+
+      <!-- About Section -->
+      <section id="about" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2>About Bookmark</h2>
+                  <p>Bookmark is a free bookmark application  created by DevOp's team. It can be yours right now, simply download the files on <a href="http://startbootstrap.com/template-overviews/grayscale/">the github page</a>. The application is open source, and you can use it for any purpose, personal or commercial.</p>
+                  <p>This is created completely using Sails , Angular and Mongo </p>
+              </div>
+          </div>
+      </section>
+
+      <!-- Download Section -->
+      <section id="signin" class="content-section text-center">
+          <div class="download-section">
+              <div class="container">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <h2>Sign up / sign in page</h2>
+                      <p>You can sign up bookmark  and start maintaining your own bookmarks</p>
+                      <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Sign in</a> -->
+                      <!-- <a href="/user/new" class="btn btn-default btn-lg">Sign up</a> -->
+                      <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal1">
+                        Sign up
+                      </a>
+                      <!-- <a href="/user/new" class="btn btn-default btn-lg"  data-toggle="modal" data-target="#myModal">Sign in</a> -->
+                      <!-- <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" value="Sign In"> -->
+                      <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+                        Sign In
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2>Contact Bookmark team</h2>
+                  <p>Feel free to email us to provide some feedback on our functions, give us suggestions for new functions and templates, or to just say hello!</p>
+                  <p><a href="mailto:sriramb@visualbi.com">sriramb@visualbi.com</a>
+                  </p>
+                  <ul class="list-inline banner-social-buttons">
+                      <li>
+                          <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/Vbisriram" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                      </li>
+                      <li>
+                          <a href="https://plus.google.com/+SriramBalaguru" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+      aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close"
+            data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel">
+            This Modal title
+          </h4>
+        </div>
+        <div class="modal-body">
+
+          <form role="form" action="/user/creat" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="email" placeholder="Email" >
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" >
+            </div>
+            <div class="modal-footer">
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Log in">
+                <!-- <input type="button" class="btn btn-default" data-dismiss="modal" value="Close"> -->
+                <button type="button" class="btn btn-default"
+                data-dismiss="modal">Close
+              </button>
+            </div>
+          </div>
+          </form>
+        </div>
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+    </button>
+  </div>
+
+  <div class="modal-body">
+
+    <form role="form" action="/user/create" method="POST">
+      <div class="form-group">
+        <input type="text" class="form-control" name="email" placeholder="Email" >
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="Name" >
+
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" >
+
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="confirmation" placeholder="Confirm password" >
+      </div>
+
+    <div class="modal-footer">
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Submit">
+      <!-- <input type="button" class="btn btn-default" data-dismiss="modal" value="Close"> -->
+      <button type="button" class="btn btn-default"
+      data-dismiss="modal">Close
+    </button>
+    </div>
+  </div>
+</form>
+<!--
+ <div class="modal-footer">
+    <button type="button" class="btn btn-default"
+    data-dismiss="modal">Close
+  </button> -->
+  <!-- <button type="button" class="btn btn-primary">
+    Sign Up
+  </button> -->
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
